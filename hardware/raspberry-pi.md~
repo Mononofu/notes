@@ -1,0 +1,26 @@
+download debian image from offical website
+
+add new user:
+  sudo useradd -m mononofu
+  sudo passwd mononofu
+
+add new user to groups (all groups where pi is member):
+  sudo nano /etc/groups
+
+`chsh` to zsh
+
+then `userdel pi`
+
+to use less memory for video, do `sudo raspi-config` and change memory split
+
+set a static ip in /etc/network/interfaces:
+
+iface eth0 inet static
+address 192.168.1.4
+netmask 255.255.255.0
+gateway 192.168.1.1
+
+and probably dns too, in /etc/resolv.conf:
+nameserver 8.8.8.8
+
+as a webserver, use flask

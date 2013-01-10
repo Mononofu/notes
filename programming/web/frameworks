@@ -1,0 +1,10 @@
+Flask: http://flask.pocoo.org/
+seems very cool and minimalistic
+
+to install:
+
+sudo apt-get install python-pip python-dev build-essential 
+sudo pip install --upgrade pip 
+sudo pip install --upgrade virtualenv 
+
+sudo pip install Flask
